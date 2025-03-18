@@ -61,3 +61,9 @@ button:hover {
 #countResetButton:hover {
     background-color: darkslategray;
 }
+
+#secretDoubleButton {
+    font-size: 5px;
+    padding: 1px;
+    background-color: white;
+}

@@ -5,6 +5,7 @@ const countUpButton = document.getElementById("countUpButton");
 const countDownButton = document.getElementById("countDownButton");
 const countDoubleButton = document.getElementById("countDoubleButton")
 const countResetButton = document.getElementById("countResetButton")
+const secretDoubleButton = document.getElementById("secretDoubleButton")
 
 // Sýna vistað gildi þegar síða hleðst
 counterDisplay.textContent = counter;
@@ -32,6 +33,13 @@ countDoubleButton.addEventListener("click", function() {
 // Núllstilla teljara
 countResetButton.addEventListener("click", function() {
     counter = 0;
+    counterDisplay.textContent = counter;
+    localStorage.setItem("counter", counter);
+});
+
+// Tvöfalda teljara
+secretDoubleButton.addEventListener("click", function()  {
+    counter *= 2;
     counterDisplay.textContent = counter;
     localStorage.setItem("counter", counter);
 });
