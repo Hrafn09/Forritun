@@ -2,9 +2,10 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
+
 button {
     padding: 10px 20px;
     font-size: 18px;
@@ -14,10 +15,49 @@ button {
     border: none;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: darkblue;
 }
 
-button:active {
-    background-color: darkgoldenrod;
+#countDownButton {
+    background-color: red;
+}
+
+#countDownButton:hover {
+    background-color: darkred;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#countDoubleButton {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+    background-color: green;
+}
+
+#countDoubleButton:hover {
+    background-color: darkgreen;
+}
+
+#countResetButton {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#countResetButton:hover {
+    background-color: darkslategray;
 }
