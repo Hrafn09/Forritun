@@ -76,10 +76,10 @@ button:hover {
     font-size: 50px;
 }
 
-.zero {
-    color: black;
-}
-
 .negative {
     color: red;
+}
+
+.zero {
+    color: black;
 }
