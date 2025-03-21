@@ -54,7 +54,7 @@ button:hover {
     padding: 10px 20px;
     font-size: 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 25px;
     cursor: pointer;
 }
 
@@ -66,4 +66,20 @@ button:hover {
     font-size: 5px;
     padding: 1px;
     background-color: white;
+}
+
+.positive {
+    color: green;
+}
+
+#counter {
+    font-size: 50px;
+}
+
+.zero {
+    color: black;
+}
+
+.negative {
+    color: red;
 }

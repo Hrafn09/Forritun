@@ -15,6 +15,7 @@ function updateCounter(value) {
     counter += value;
     counterDisplay.textContent = counter;
     localStorage.setItem("counter", counter);
+    display();
 }
 
 // Atburðarhlustarar fyrir takka
@@ -35,6 +36,7 @@ countResetButton.addEventListener("click", function() {
     counter = 0;
     counterDisplay.textContent = counter;
     localStorage.setItem("counter", counter);
+    display();
 });
 
 // Tvöfalda teljara
@@ -42,4 +44,18 @@ secretDoubleButton.addEventListener("click", function()  {
     counter *= 2;
     counterDisplay.textContent = counter;
     localStorage.setItem("counter", counter);
+    display();
 });
+
+function display() {
+    if (counter > 0) {
+        counterDisplay.className = "positive";
+    }
+    else {
+        if (counter < 0) {
+        counterDisplay.className = "negative";
+    }
+        else {
+        counterDisplay.className = "zero";
+    }}
+};
