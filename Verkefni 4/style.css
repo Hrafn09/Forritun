@@ -72,14 +72,14 @@ button:hover {
     color: green;
 }
 
-#counter {
-    font-size: 50px;
-}
-
 .negative {
     color: red;
 }
 
 .zero {
     color: black;
+}
+
+#counter {
+    font-size: 50px;
 }
