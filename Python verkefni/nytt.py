@@ -2,7 +2,7 @@ import time
 
 
 bankanr = 123412 #heiltala e. integer
-nafn = "Bjarkalingur" #strengur e. string
+nafn = "Hrafnalingur" #strengur e. string
 er_I_Gardaskola = False #boolean
 tala_pi = 3.14 #float
 
